@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft VPN - Ваш надёжный VPN</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        header {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            display: inline;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(180deg, #ffe6f2 0%, #ffffff 100%);
+            color: #ff6699;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 20px;
+            background-color: #fff;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 15px 20px;
+            border: 2px solid #ff99cc;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature h3 {
+            color: #ff6699;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature img {
+            width: 100px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .feature p {
+            font-size: 1em;
+            line-height: 1.4;
+            margin: 10px 0;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(180deg, #ffe6f2 0%, #ffffff 100%);
+            border-radius: 0;
+        }
+
+        .cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta button {
+            background-color: #ff66b2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #ff3399;
+            transform: scale(1.1);
+        }
+
+        .pricing {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #fff;
+        }
+
+        .pricing h2 {
+            font-size: 2em;
+            color: #ff6699;
+            margin-bottom: 15px;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-card {
+            background-color: #ffe6f2;
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 2px solid #ff99cc;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 180px;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.2em;
+            color: #ff6699;
+            margin-bottom: 5px;
+        }
+
+        .pricing-card p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #ff99cc;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soft VPN</h1> 
+        <p>- Ваш надёжный и милый VPN-сервис 🐾</p>
+    </header>
+
+    <section class="hero">
+        <h2>Защитите свои данные с Soft VPN</h2>
+        <p>Быстрый, надёжный и безопасный доступ к интернету. А ещё много котиков! 🐱</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>🚀 Высокая скорость</h3>
+            <img src="2.png" alt="Котик">
+            <p>Наши серверы обеспечивают молниеносное соединение, чтобы вы могли наслаждаться интернетом без задержек.</p>
+            <p>Подходит для просмотра видео в высоком качестве, игр и работы с большими файлами.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔒 Надёжная защита</h3>
+            <img src="1.png" alt="Котик">
+            <p>Ваши данные зашифрованы и защищены на высшем уровне. Никто не сможет получить доступ к вашей информации.</p>
+            <p>Мы используем современные протоколы безопасности и не храним логи ваших действий.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🕵️ Полная конфиденциальность</h3>
+            <img src="3.png" alt="Котик">
+            <p>Мы заботимся о вашей конфиденциальности. Ваши данные остаются только с вами.</p>
+            <p>Котики это одобряют! 🐾 Идеально для безопасного использования публичного Wi-Fi.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Тарифы</h2>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>2 дня</h3>
+                <p>10 ₽</p>
+            </div>
+            <div class="pricing-card">
+                <h3>5 дней</h3>
+                <p>25 ₽</p>
+            </div>
+            <div class="pricing-card">
+                <h3>10 дней</h3>
+                <p>50 ₽</p>
+            </div>
+            <div class="pricing-card">
+                <h3>30 дней</h3>
+                <p>100 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Подключитесь к Soft VPN уже сегодня!</h2>
+        <button onclick="window.location.href='https://t.me/softvpn_vpn'">Начать сейчас</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soft VPN. Все права защищены. Мяу. 🐱</p>
+    </footer>
+</body>
+</html>
