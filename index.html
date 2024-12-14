@@ -13,6 +13,7 @@
     <title>Soft VPN - Ваш надёжный VPN</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
@@ -22,7 +23,7 @@
             position: relative;
         }
 
-              header {
+        header {
             background-color: #ff99cc;
             color: white;
             text-align: center;
@@ -93,7 +94,7 @@
         }
 
         .feature img {
-            width: 100px;
+            width: 120px;
             height: auto;
             margin: 10px 0;
         }
@@ -208,8 +209,91 @@
 			
         }
 
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
 
+        .column {
+            flex: 1 1 35%;
+            background-color: #ffe6f2;
+            padding: 20px;
+            border: 2px solid #ff99cc;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+            max-width: 550px;
+        }
+
+        .column h2 {
+            font-size: 1.8em;
+            color: #ff6699;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .column p, .column ul {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .column ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .column ul li {
+            margin-bottom: 10px;
+        }
+
+        .column ul li a {
+            color: #ff66b2;
+            text-decoration: none;
+        }
+
+        .column ul li a:hover {
+            text-decoration: underline;
+        }
+code {
+            display: block;
+            background-color: #ffe6f2;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            margin-top: 10px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .free-key button {
+            margin-top: 10px;
+            background-color: #ff66b2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .free-key button:hover {
+            background-color: #ff3399;
+        }
     </style>
+    <script>
+        function copyToClipboard() {
+            const key = "vless://b97cb60a-626c-4219-81b7-a07213850c5e@95.181.173.93:29048?type=tcp&security=reality&pbk=O7aubzo94sPw2xajb0gjbmvCP7S-8MoJ3nih3Xh80mc&fp=chrome&sni=yahoo.com&sid=6248f752523f5fb3&spx=%2F#free-free";
+            navigator.clipboard.writeText(key).then(() => {
+                alert("Ключ скопирован в буфер обмена!");
+            }).catch(err => {
+                alert("Ошибка при копировании ключа: " + err);
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -217,24 +301,37 @@
         <p>- Ваш надёжный и милый VPN-сервис 🐾</p>
     </header>
 
-    <section class="hero">
-        <h2>Защитите свои данные с Soft VPN</h2>
-        <p>Быстрый, надёжный и безопасный доступ к интернету. А ещё много котиков! 🐱</p>
-    </section>
+<section class="hero" style="padding: 30px 20px; background: linear-gradient(180deg, #ffe6f2 0%, #ffffff 100%); color: #ff6699;">
+    <h2>Защитите свои данные с Soft VPN</h2>
+    <p>Быстрый, надёжный и безопасный доступ к интернету. А ещё много котиков! 🐱</p>
+    <button onclick="window.location.href='https://t.me/softvpn_vpn'" style="background-color: #ff66b2; color: white; padding: 15px 30px; border: none; border-radius: 30px; font-size: 1.2em; cursor: pointer; transition: background-color 0.3s, transform 0.3s, filter 0.3s; margin-top: 20px;" onmouseover="this.style.backgroundColor='#e0559b'" onmouseout="this.style.backgroundColor='#ff66b2'">
+        Начать сейчас
+    </button>
+	
+</section>
+
+
+
+<hr style="border: none; border-top: 2px solid #ff99cc; margin: 0px auto; width: 100%;">
+ <section class="cta">
+        <h2>Почему выбирают нас?</h2>
+           </section>
 
     <section class="features">
         <div class="feature">
             <h3>🚀 Высокая скорость</h3>
-            <img src="2.png" alt="Котик">
+            <img src="1.png" alt="Котик">
             <p>Наши серверы обеспечивают молниеносное соединение, чтобы вы могли наслаждаться интернетом без задержек.</p>
-            <p>Подходит для просмотра видео в высоком качестве, игр и работы с большими файлами.</p>
+            <p>Подходит для просмотра видео в высоком качестве, игр и такими сервисами как ChatGPT.</p>
+			<p><strong>Регион нашего VPN: USA.🌍</strong></p>
         </div>
 
         <div class="feature">
             <h3>🔒 Надёжная защита</h3>
-            <img src="1.png" alt="Котик">
+            <img src="2.png" alt="Котик">
             <p>Ваши данные зашифрованы и защищены на высшем уровне. Никто не сможет получить доступ к вашей информации.</p>
             <p>Мы используем современные протоколы безопасности и не храним логи ваших действий.</p>
+			<p><strong>Протокол, который мы используем: VLESS TCP Reality. 🌐</strong></p>
         </div>
 
         <div class="feature">
@@ -243,52 +340,159 @@
             <p>Мы заботимся о вашей конфиденциальности. Ваши данные остаются только с вами.</p>
             <p>Котики это одобряют! 🐾 Идеально для безопасного использования публичного Wi-Fi.</p>
         </div>
+		
+		<div class="feature">
+            <h3>💸 Отличные цены</h3>
+            <img src="4.png" alt="Котик">
+            <p>Вы можете выбрать такой тариф, который подойдет именно вам.🐱</p>
+			<hr style="border: none; border-top: 2px solid #ff99cc; margin: 0px auto; width: 100%;">
+            <p> <strong>2 дня (10₽)</strong> 🕑 — для быстрого тестирования </p>
+			<p><strong>5 дней (25₽)</strong>🖐️ — оптимально для временного использования</p>
+			<p><strong>10 дней (50₽) </strong>🔟 — отличный баланс цены и срока</p>
+			<p><strong>30 дней (100₽)</strong> 📅 — максимум свободы и безопасности</p>
+        </div>
+		
+		<div class="feature">
+            <h3>🔥 Минимум рекламы</h3>
+            <img src="5.png" alt="Котик">
+            <p>На нашем сервере установлен <strong>AdGuard Home</strong> — мощный инструмент для блокировки рекламы, трекеров и нежелательных ресурсов. 🚫📊</p>
+          
+        <p>С <strong>Soft VPN</strong> и <strong>AdGuard Home</strong> вы получаете не только быстрый и безопасный VPN, но и интернет без мусора и слежки. 🚀💼</p>
+        </div>
+		
     </section>
 	
-	    <section class="adguard">
-        <h3>🎉 Soft VPN: Больше, чем просто VPN! 🔒</h3>
-        <p>На нашем сервере установлен AdGuard Home — мощный инструмент для блокировки рекламы, трекеров и нежелательных ресурсов. 🚫📊</p>
-        <p><strong>Что это значит для вас?</strong></p>
-		<hr style="border: none; border-top: 2px solid #ff99cc; margin: 20px auto; width: 50%;">
+    <section class="columns">
+        <div class="column">
+            <h2>Как начать пользоваться нашим VPN❓</h2>
+			<p>Для работы с <strong>Soft VPN</strong> мы предоставляем вам VLESS-ключи, которые необходимо скопировать и вставить в любую программу для работы с ключами.🔥</p>
+            <p>Программы, которыми ты можешь воспользоваться 🔑:</p>
+            <ul>
+                <li><strong>🖥️ Для WINDOWS:</strong> <a href="https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip">nekoray</a> (наш выбор)</li>
+                <li><strong>📱 Для ANDROID:</strong> <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">v2rayNG</a></li>
+                <li><strong>🍎 Для IOS:</strong> <a href="https://apps.apple.com/ru/app/streisand/id6450534064">Streisand</a> (наш выбор), <a href="https://apps.apple.com/ru/app/shadowrocket/id932747118">Shadowrocket</a></li>
+            </ul>
+            <p>Эти программы — лишь малая часть того, что можно найти в интернете. 🌐 Не стесняйтесь искать то, что подходит именно вам! 😊</p>
+		
+
+        </div>
+		
+
+		<div class="column">
+		<h2>Связь с нами🕒</h2>
+		<p> Мы работаем для вас с <strong>3:00 до 12:00</strong> по МСК с понедельника по пятницу. 📅✨</p>
+<p>🐾 Иногда мы трудимся и в выходные, когда нагрузка особенно большая. Если вы написали нам в выходной, постараемся ответить как можно скорее! 💌😊</p>
+<hr style="border: none; border-top: 2px solid #ff99cc; margin: 0px auto; width: 100%;">
+<p>🐾 <strong>Оплатить</strong> наши услуги можно, написав нам в Telegram: <a href="https://t.me/softvpn_sup">@softvpn_sup</a>. Мы с радостью всё расскажем и поможем! 😊</p>
+
+<p>Или загляните на наши объявления на FunPay: 🎉</p>
+<ul>
+    <li>🌟 <strong>2 дня:</strong> <a href="https://funpay.com/lots/offer?id=36153056">Купить</a></li>
+    <li>🌟 <strong>5 дней:</strong> <a href="https://funpay.com/lots/offer?id=36153104">Купить</a></li>
+    <li>🌟 <strong>10 дней:</strong> <a href="https://funpay.com/lots/offer?id=36153109">Купить</a></li>
+    <li>🌟 <strong>30 дней:</strong> <a href="https://funpay.com/lots/offer?id=36153114">Купить</a></li>
+</ul>
+
+<p>🐱 Если вы хотите оплатить через <strong>СБП</strong>, просто напишите нам напрямую. Оплата проходит без комиссии, и все ваши котики останутся довольны! 💖</p>
+
+		</div>
+        <div class="column">
+            <h2>🎉 Попробуй сейчас: 🔑✨</h2>
+            <p>Мы предлагаем попробовать наш <strong>бесплатный ключ</strong>, чтобы решить, хочешь ли ты пользоваться нашими услугами.😻</p>
+            <p><strong>⏳ Ограничение:</strong> 24 часа с момента активации 🕒</p>
+            <p><strong>Ключ:</strong></p>
+            <code>vless://b97cb60a-626c-4219-81b7-a07213850c5e@95.181.173.93:29048?type=tcp&security=reality&pbk=O7aubzo94sPw2xajb0gjbmvCP7S-8MoJ3nih3Xh80mc&fp=chrome&sni=yahoo.com&sid=6248f752523f5fb3&spx=%2F#free-free</code>
+           <div style="text-align: center; margin-top: 20px;">
+    <button onclick="copyToClipboard()" style="background-color: #ff66b2; color: white; padding: 15px 25px; border: none; border-radius: 20px; font-size: 1em; cursor: pointer; transition: background-color 0.3s, transform 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        Скопировать ключ
+    </button>
+	<p>🐾 Если ключик вдруг не работает, не переживай! Подожди немного, и мы его обязательно обновим. ⏳✨</p>
+<p>Но если не хочется ждать, напиши нам в Telegram: <a href="https://t.me/softvpn_sup">@softvpn_sup</a> кодовую фразу: <strong>МЯУ, ДАЙТЕ VPN!</strong>, и наши котики мигом придут на помощь! 🐱💌</p>
 
 
-        <p><strong>Чистый интернет ✨</strong><br>Блокировка навязчивой рекламы на сайтах и в приложениях. Ускорение загрузки страниц благодаря отсутствию лишних элементов.<br>
-            <strong>Защита конфиденциальности 🕵️‍♂️</strong><br>Отключение трекеров и сборщиков данных. Ваши действия в интернете остаются только вашими.<br>
-            <strong>Дополнительная безопасность 🛡️</strong><br>Фильтрация вредоносных сайтов. Уменьшение риска заражения вирусами.<br>
-        </p>
-        <p>С Soft VPN и AdGuard Home вы получаете не только быстрый и безопасный VPN, но и интернет без мусора и слежки. 🚀💼</p>
-        <hr style="border: none; border-top: 2px solid #ff99cc; margin: 20px auto; width: 50%;">
+  
 
-		<p><strong>Оцените разницу уже сегодня! 😊</strong></p>
-    </section>
-	
+</div>
 
-    <section class="pricing">
-        <h2>Тарифы</h2>
-        <div class="pricing-table">
-            <div class="pricing-card">
-                <h3>2 дня</h3>
-                <p>10 ₽</p>
-            </div>
-            <div class="pricing-card">
-                <h3>5 дней</h3>
-                <p>25 ₽</p>
-            </div>
-            <div class="pricing-card">
-                <h3>10 дней</h3>
-                <p>50 ₽</p>
-            </div>
-            <div class="pricing-card">
-                <h3>30 дней</h3>
-                <p>100 ₽</p>
-            </div>
+
+<style>
+    button:hover {
+        background-color: #ff3399;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+<style>
+    button:hover {
+        background-color: #ff3399;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
         </div>
     </section>
+<hr style="border: none; border-top: 2px solid #ff99cc; margin: 0px auto; width: 100%;">
+   
+<section style="display: flex; flex-wrap: nowrap; gap: 20px; padding: 20px; background-color: #fff; border: 0px solid #ff99cc; border-radius: 10px;">
+    <!-- Первая колонка -->
+    <div style="flex: 1; padding: 20px; background-color: #ffe6f2; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <p>🎯 <strong>Советы для более комфортного сёрфинга с Soft VPN</strong> </p>
+        <ul>
+            <li>🖥️ <strong>Установите Opera GX</strong>
+                <ul>
+                    <li>Это браузер, созданный специально для геймеров и любителей скорости.</li>
+                </ul>
+            </li>
+            <li>🌐 <strong>Если вы пользуетесь Google Chrome</strong>
+                <ul>
+                    <li>Установите расширение <strong>Pie Adblock</strong> 🍰, которое эффективно блокирует рекламу и улучшает ваш опыт в интернете.</li>
+                </ul>
+            </li>
+            <li>🎥 <strong>Поменяйте регион на YouTube</strong>
+                <ul>
+                    <li>Переключите регион с США на Россию — это может улучшить рекомендации и доступ к определённому контенту.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Следуя этим рекомендациям, вы сможете сделать сёрфинг ещё удобнее и приятнее! 🚀✨</p>
+    </div>
+    <!-- Вторая колонка -->
+    <div style="flex: 1; padding: 20px; background-color: #ffe6f2; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <p><strong>Краткая инструкция по активации ключа в Nekoray 🖥️🔑</strong></p>
+        <ol style="padding-left: 20px; margin: 0;">
+            <li><strong>Скачайте и установите программу Nekoray</strong> 📥
+                <p style="margin: 5px 0;">Распакуйте архив в удобное место на вашем компьютере.</p>
+            </li>
+            <li><strong>Запустите Nekoray</strong> 🚀
+                <p style="margin: 5px 0;">Откройте папку с программой и дважды кликните по файлу <strong>nekoray.exe</strong>.</p>
+            </li>
+            <li><strong>Скопируйте ключ с сайта</strong> 📋
+                <p style="margin: 5px 0;">Нажмите на кнопку <strong>"Скопировать ключ"</strong> и подтвердите действие во всплывшем окне.</p>
+            </li>
+            <li><strong>Добавьте ключ</strong> ➕
+                <p style="margin: 5px 0;">Вставьте ваш ключ с помощью комбинации клавиш <strong>Ctrl+V</strong> или нажмите <strong>Сервер -> Добавить профиль из буфера обмена</strong>.</p>
+            </li>
+            <li><strong>Запустите VPN</strong> 💾
+                <p style="margin: 5px 0;">Нажмите правой кнопкой мыши на появившемся поле и выберите <strong>Запустить</strong>.</p>
+            </li>
+            <li><strong>Активируйте подключение</strong> 🌐
+                <p style="margin: 5px 0;">Поставьте галочку в поле <strong>Режим TUN</strong>.</p>
+            </li>
+            <li><strong>Наслаждайтесь сёрфингом</strong> 🔍
+                <p style="margin: 5px 0;">Теперь вы можете пользоваться интернетом через VPN.</p>
+            </li>
+        </ol>
+    </div>
+</section>
 
-    <section class="cta">
-        <h2>Подключитесь к Soft VPN уже сегодня!</h2>
-        <button onclick="window.location.href='https://t.me/softvpn_vpn'">Начать сейчас</button>
-    </section>
+<button onclick="window.location.href='https://t.me/softvpn_vpn'" 
+        style="background-color: #ff66b2; color: white; padding: 15px 30px; border: none; border-radius: 0px; font-size: 1.2em; cursor: pointer; transition: background-color 0.3s, transform 0.3s, filter 0.3s; margin-top: 20px; width: 100%; max-width: 100%; text-align: center;" 
+        onmouseover="this.style.backgroundColor='#e0559b'" 
+        onmouseout="this.style.backgroundColor='#ff66b2'">
+    Я всё прочитал и готов начать сейчас
+</button>
 
     <footer>
         <p>&copy; 2024 Soft VPN. Все права защищены. Мяу. 🐱</p>
